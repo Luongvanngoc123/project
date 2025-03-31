@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+            background-image: url('background.jpg'); /* Hình ảnh nền */
+            background-size: cover; /* Đảm bảo hình ảnh phủ toàn bộ */
+            background-position: center; /* Căn giữa hình ảnh */
+            background-repeat: no-repeat; /* Không lặp lại hình ảnh */
+            margin: 0;
+        }
+        h1 {
+            color: #333;
+        }
+        .logout-button {
+            margin-top: 20px;
+            padding: 10px 15px;
+            background: #ff5722; /* Màu nền cho nút đăng xuất */
+            color: #fff; /* Màu chữ */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .logout-button:hover {
+            background: #e64a19; /* Màu nền khi hover */
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello World!</h1>
+    <video controls>
+        <source src="video.mp4" type="video/mp4">
+        Trình duyệt của bạn không hỗ trợ video.
+    </video>
+    <button class="logout-button" onclick="logout()">Đăng Xuất</button>
+
+    <script>
+        function logout() {
+            // Chuyển hướng về trang đăng nhập
+            window.location.href = 'index.html';
+        }
+    </script>
+</body>
+</html>
